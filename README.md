@@ -10,7 +10,7 @@ We can use the command ./install.sh to automatically set up the project.
 git clone https://github.com/Youssef-Hd/CreditCard.git
 
 # Change to the project directory
-cd creditCard
+cd CreditCard
 cd backend
 
 # Install project dependencies

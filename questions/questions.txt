@@ -1,0 +1,47 @@
+1) Explain the difference
+let:
+    1-Block Scope: Variables declared with let are block-scoped,
+    which means they are only accessible within the block (inside curly braces) where they are declared, 
+    including loops and conditional statements.
+
+    2-inside the block scope can be reassigned to different values .
+
+const:
+    1-Block Scope: Like let, const variables are block-scoped.
+    
+    2-Hoisting: const variables are also hoisted, but they are not initialized with a value. 
+
+    3-Immutability: Variables declared with const cannot be re-assigned. However,
+     they can still be modified if they are objects or arrays.
+     This means the reference cannot change,
+     but the contents of the object or array can.
+
+var:
+    1-Function Scope: Variables declared with var are function-scoped.
+    This means they are only accessible within the function in which they are declared.
+
+    2-Hoisting: Variables declared with var are hoisted to the top of their containing function or global scope.
+     This means you can access a var variable before it's declared, but its value will be undefined.
+
+    3-Reassignment: You can reassign var variables.
+
+
+2) Design a newsletter scheduler
+
+the main approach to ensure that the newsletter is sent to all of the clients is having a table ,
+that contains each clients id  as a reference to the client informatin and their timezones 
+ once the server or service runs we distinct group the clients by their timeZones and for each timeZone using javascript,
+  we can get the exact date and time and once there is a match at 9:00am we select the clients that are in that timeZone and send the newsletter,
+  to  make this even more accurate we can automatically save each user's timezone throught getting their information from the user's cookies ,
+  and every minute when the server runs we repeat the whole process .
+
+
+3) What would be the result of the following code
+    -the following code will not return the expected result as it should because of the async nature of the setTimeout function  it will return the console log at the last iteration of i which is 100
+    -to make this loop work correctly we can replace the var i=0 with let i =0 ,which automatically creates a new variable scope for each iteration.
+     and this way the loop will return the console logs correctly until i reaches 99
+
+4) Import behavior
+    -if you run the first module that uses the exporter arr module it will console log hello
+    -and if you run the second module it will console log another  even if you run it  before or after each other the result is always the same 
+    -due to the exported modules nature being that every time you import a module it will create a new instance of the module and use it in the imported page/module

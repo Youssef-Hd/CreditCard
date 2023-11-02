@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="./index.css".css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Enter Credit Card Information</h1>
+        <form id="creditCardForm">
+          <div id="myPopup" class=""></div>
+          <fieldset>
+            <label for="cardNameHolder">Name on Card:</label>
+            <input type="text" id="cardNameHolder" name="cardNameHolder" required/>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required />
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required /><br />
+            <label for="expMonth">Expiration Month:</label>
+            <input type="text" id="expMonth" name="expMonth" required /><br />
+            <label for="expYear">Expiration Year:</label>
+            <input type="text" id="expYear" name="expYear" required /><br />
+          </fieldset>
+          <button type="button" id="submitForm">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

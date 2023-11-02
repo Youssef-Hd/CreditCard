@@ -33,7 +33,7 @@ document.getElementById("submitForm").addEventListener("click", function () {
         messageContainer.innerHTML = `<div class="myStyledElement error"><h2>${data.error}</h2></div>`;
       } else {
         // Displaying success message
-        messageContainer.innerHTML = `<div class="myStyledElement success">Card data saved successfully!</div>`;
+        messageContainer.innerHTML = `<div class="myStyledElement success"><h2>Card data saved successfully!</h2></div>`;
       }
       //making sure the div appears
       messageContainer.style.display = "block";

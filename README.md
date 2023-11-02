@@ -6,7 +6,7 @@ PostgreSQL version 16.0
 We can use the command ./install.sh to automatically set up the project.
 
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone [https://github.com/yourusername/yourproject.git](https://github.com/Youssef-Hd/CreditCard.git)
 
 # Change to the project directory
 cd backend

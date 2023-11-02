@@ -11,6 +11,7 @@ git clone https://github.com/Youssef-Hd/CreditCard.git
 
 # Change to the project directory
 cd creditCard
+cd backend
 
 # Install project dependencies
 npm install

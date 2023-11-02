@@ -16,7 +16,7 @@ document.getElementById("submitForm").addEventListener("click", function () {
     exp_year: expYear,
   };
 
-  fetch("http://localhost:5002/api/postCard", {
+  fetch("http://localhost:5000/api/postCard", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

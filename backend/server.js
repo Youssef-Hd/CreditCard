@@ -5,7 +5,7 @@ const cors = require("cors");
 const creditCardRoutes = require('./routes/creditCardRoutes')
 
 //specifying our port number
-port = 5002;
+port = 5000;
 
 //middlewares
 //building our express app

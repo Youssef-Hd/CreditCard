@@ -4,12 +4,13 @@ PostgreSQL version 16.0
 
 # Installation steps:
 We can use the command ./install.sh to automatically set up the project.
+!important If you're not using a linux OS device please make sure to use gitbach for the script to run properly.
 
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/Youssef-Hd/CreditCard.git
 
 # Change to the project directory
-cd backend
+cd creditCard
 
 # Install project dependencies
 npm install
